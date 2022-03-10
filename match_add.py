@@ -6,7 +6,7 @@ def match_add(string):
     else:
         return "This string does not match."
 
-# For testing uncomment code
+# For testing
 # print(match_add('Add: 1 + 23'))
 # print(match_add('Add: 9 + 51'))
 # print(match_add('Add: 0 + 89'))

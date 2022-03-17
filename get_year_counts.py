@@ -3,7 +3,7 @@ import re
 
 def get_year_counts(lines):
     year_dict = dict()
-    i:str
+    i: str
     for i in lines:
         dates = i.split(' ')
         for d in dates:
@@ -15,7 +15,7 @@ def get_year_counts(lines):
     new_list = [(k, v) for k, v in year_dict.items()]
     new_list.sort(key=lambda y: y[1])
     return new_list
-            
+
 
 lines = ["02/04/20 12-30-19", "03/04/20", "08-20-18"]
 print(get_year_counts(lines))
